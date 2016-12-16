@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Stanberry.ttf">
+            <string>StanberryRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Page1 View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -45,6 +50,13 @@
                                                 <rect key="frame" x="31" y="-14" width="284" height="409"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QoF-kf-oTJ" userLabel="Tieta">
+                                                <rect key="frame" x="-8" y="13" width="203" height="153"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="tietaText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGc-cC-zeE"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" id="XDI-8e-SDC" userLabel="Tiet">
@@ -59,6 +71,13 @@
                                                 <rect key="frame" x="51" y="4" width="119" height="102"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CTT-Bg-eP0" userLabel="Tiet">
+                                                <rect key="frame" x="23" y="8" width="125" height="119"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="tietText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUF-cq-Uew"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" id="TlM-F8-XYy" userLabel="Plantes">
@@ -79,24 +98,99 @@
                                             </imageView>
                                         </subviews>
                                     </view>
-                                </subviews>
-                            </view>
-                            <view contentMode="scaleToFill" id="9ok-rH-HDu" userLabel="Intermedi">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" id="pxL-SY-etZ" userLabel="Carlota">
-                                        <rect key="frame" x="359" y="281" width="359" height="333"/>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="Qbm-kt-FYM" userLabel="BafaradaTieta">
+                                        <rect key="frame" x="756" y="38" width="268" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01_Carlota_bici01.png" id="Fwa-v5-6Sh">
-                                                <rect key="frame" x="41" y="-30" width="273" height="337"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bafarada09.png" id="iyK-jz-lS0">
+                                                <rect key="frame" x="46" y="14" width="193" height="106"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01_Carlota_Estatica.png" id="3an-wa-arc">
-                                                <rect key="frame" x="59" y="8" width="126" height="78"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" id="YFE-Wi-iXG">
+                                                <rect key="frame" x="68" y="26" width="153" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="StanberryRegular" family="Stanberry" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="fjg-kn-IIz" userLabel="BafaradaCarlota">
+                                        <rect key="frame" x="500" y="250" width="268" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bafarada08.png" id="Gm2-Sd-hWr">
+                                                <rect key="frame" x="8" y="20" width="252" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" id="GMB-EZ-s0T">
+                                                <rect key="frame" x="69" y="26" width="174" height="95"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="StanberryRegular" family="Stanberry" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="f2M-6C-25b" userLabel="BafaradaTiet">
+                                        <rect key="frame" x="321" y="32" width="268" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bafarada06.png" id="6R2-ty-4re">
+                                                <rect key="frame" x="9" y="19" width="220" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vvA-qn-sXE">
+                                                <rect key="frame" x="69" y="27" width="147" height="92"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="StanberryRegular" family="Stanberry" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="9ok-rH-HDu" userLabel="Intermedi">
+                                <rect key="frame" x="0.0" y="245" width="1027" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="pxL-SY-etZ" userLabel="Carlota">
+                                        <rect key="frame" x="-319" y="0.0" width="319" height="357"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="01_Carlota_bici01.png" id="Fwa-v5-6Sh">
+                                                <rect key="frame" x="21" y="8" width="275" height="333"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="01_Carlota_Estatica.png" id="3an-wa-arc">
+                                                <rect key="frame" x="38" y="43" width="125" height="78"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sqi-Kn-Tj6">
+                                                <rect key="frame" x="59" y="24" width="115" height="129"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="carlotaText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9r6-5B-qwP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="aUa-Ps-Dmf" userLabel="BafaradaLinux">
+                                        <rect key="frame" x="395" y="174" width="277" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bafarada06.png" id="ShR-vz-huS">
+                                                <rect key="frame" x="-9" y="32" width="248" height="109"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" id="cte-KZ-C6r">
+                                                <rect key="frame" x="56" y="30" width="174" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="StanberryRegular" family="Stanberry" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </view>
                                 </subviews>
@@ -105,11 +199,10 @@
                                 <rect key="frame" x="0.0" y="443" width="1024" height="325"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1re-ua-s22" userLabel="Text">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" id="1re-ua-s22" userLabel="Text">
                                         <rect key="frame" x="208" y="208" width="657" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="StanberryRegular" family="Stanberry" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -127,6 +220,21 @@
                                         <rect key="frame" x="-40" y="-2" width="298" height="226"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8zu-c5-oYg" userLabel="Siguiente">
+                                        <rect key="frame" x="898" y="199" width="100" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                        <state key="normal" backgroundImage="Siguiente.png"/>
+                                        <connections>
+                                            <segue destination="rTX-dv-pjH" kind="modal" id="vKA-mI-9eI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EwQ-LQ-Amb" userLabel="Linux">
+                                        <rect key="frame" x="309" y="45" width="91" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="linuxText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVT-kh-Gjm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fle-Fu-XRI" userLabel="Tronc">
@@ -143,14 +251,48 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="carlota" destination="pxL-SY-etZ" id="JpD-oV-PaL"/>
+                        <outlet property="carlotaBafarada" destination="fjg-kn-IIz" id="mxD-HG-dGk"/>
+                        <outlet property="carlota_bici" destination="Fwa-v5-6Sh" id="h0k-de-mhb"/>
+                        <outlet property="lblCarlotaBafarada" destination="GMB-EZ-s0T" id="XGd-DA-IgU"/>
+                        <outlet property="lblLinuxBafarada" destination="cte-KZ-C6r" id="1un-aQ-1VX"/>
                         <outlet property="lblTextInicial" destination="1re-ua-s22" id="BxZ-Hj-cEU"/>
+                        <outlet property="lblTietBafarada" destination="vvA-qn-sXE" id="Hgv-Bv-avB"/>
+                        <outlet property="lblTietaBafarada" destination="YFE-Wi-iXG" id="rSI-16-S3Q"/>
+                        <outlet property="linuxBafarada" destination="aUa-Ps-Dmf" id="KJc-6f-Hks"/>
+                        <outlet property="tietBafarada" destination="f2M-6C-25b" id="h4y-rv-qd4"/>
                         <outlet property="tiet_cos" destination="FgY-b4-m9N" id="Gxg-Bl-Hdk"/>
+                        <outlet property="tietaBafarada" destination="Qbm-kt-FYM" id="BEy-en-Ww1"/>
                         <outlet property="tieta_cos" destination="qm3-8e-qn0" id="ZQ5-bV-UNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="293" y="530"/>
+        </scene>
+        <!--Page2 View Controller-->
+        <scene sceneID="W4d-mD-C3N">
+            <objects>
+                <viewController id="rTX-dv-pjH" customClass="Page2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W3J-kt-1ac">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4wy-5E-bSW">
+                                <rect key="frame" x="45" y="646" width="100" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="Anterior.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="iuj-sS-0vD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjr-qo-3cO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="530"/>
         </scene>
     </scenes>
     <resources>
@@ -167,7 +309,12 @@
         <image name="01_tiet_estatic.png" width="1040" height="832"/>
         <image name="01_tieta_cap_estatica.png" width="297" height="288"/>
         <image name="01_tieta_estatica.png" width="595" height="850"/>
+        <image name="Anterior.png" width="56" height="48"/>
         <image name="Screenshot_Page1.png" width="1025" height="748"/>
+        <image name="Siguiente.png" width="56" height="48"/>
+        <image name="bafarada06.png" width="841" height="267"/>
+        <image name="bafarada08.png" width="787" height="267"/>
+        <image name="bafarada09.png" width="841" height="409"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

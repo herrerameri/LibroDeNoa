@@ -5,4 +5,9 @@
   Created by dedam on 14/12/16.
   Copyright © 2016 UAB. All rights reserved.
 */
-"inicial" = "CHAU";
+"inicial" = "Noa y su gato, Línux, pasan unos días en la granja del tío y la tía de Noa.";
+"audio" = "narrador01_fast_sp";
+"tia" = "¡Qué día tan bonito hace!";
+"tio" = "Esta leña hará un buen fuego.";
+"carlota" = "¡Vamos a explorar la granja!";
+"linux" = "Me he dejado las gafas de sol en casa.";
